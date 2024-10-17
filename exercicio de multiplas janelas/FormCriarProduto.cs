@@ -48,5 +48,10 @@ namespace exercicio_de_multiplas_janelas
         {
 
         }
+
+        private void FormCriarProduto_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

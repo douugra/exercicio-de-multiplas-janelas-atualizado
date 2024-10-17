@@ -38,13 +38,13 @@
             buttonprodutos = new Button();
             buttoncompras = new Button();
             button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button6 = new Button();
-            button5 = new Button();
             button7 = new Button();
-            button8 = new Button();
             buttonAdicionarCliente = new Button();
+            buttonAdicionarVendas = new Button();
+            buttonAdicionarFornecedor = new Button();
+            buttonRemoverFornecedor = new Button();
+            buttonRemoverVendas = new Button();
+            buttonRemoverCliente = new Button();
             buttonvendas = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -53,10 +53,9 @@
             // 
             buttonvendas.Image = (Image)resources.GetObject("buttonvendas.Image");
             buttonvendas.ImageAlign = ContentAlignment.TopLeft;
-            buttonvendas.Location = new Point(509, 108);
-            buttonvendas.Margin = new Padding(3, 4, 3, 4);
+            buttonvendas.Location = new Point(427, 81);
             buttonvendas.Name = "buttonvendas";
-            buttonvendas.Size = new Size(110, 53);
+            buttonvendas.Size = new Size(114, 40);
             buttonvendas.TabIndex = 4;
             buttonvendas.Text = "Vendas";
             buttonvendas.TextAlign = ContentAlignment.BottomRight;
@@ -66,37 +65,35 @@
             // buttonAdicionar
             // 
             buttonAdicionar.BackgroundImage = (Image)resources.GetObject("buttonAdicionar.BackgroundImage");
-            buttonAdicionar.Location = new Point(200, 167);
-            buttonAdicionar.Margin = new Padding(3, 4, 3, 4);
+            buttonAdicionar.Location = new Point(155, 122);
             buttonAdicionar.Name = "buttonAdicionar";
-            buttonAdicionar.Size = new Size(105, 27);
+            buttonAdicionar.Size = new Size(92, 25);
             buttonAdicionar.TabIndex = 0;
-            buttonAdicionar.Text = "𝔸𝕕𝕚𝕔𝕚𝕠𝕟𝕒𝕣";
+            buttonAdicionar.Text = "Adicionar";
             buttonAdicionar.UseVisualStyleBackColor = true;
             buttonAdicionar.Click += buttonAdicionar_Click;
             // 
             // buttonRemover
             // 
             buttonRemover.BackgroundImage = (Image)resources.GetObject("buttonRemover.BackgroundImage");
-            buttonRemover.Location = new Point(200, 202);
-            buttonRemover.Margin = new Padding(3, 4, 3, 4);
+            buttonRemover.Location = new Point(155, 149);
             buttonRemover.Name = "buttonRemover";
-            buttonRemover.Size = new Size(105, 27);
+            buttonRemover.Size = new Size(92, 23);
             buttonRemover.TabIndex = 1;
-            buttonRemover.Text = "ℝ𝕖𝕞𝕠𝕧𝕖𝕣";
+            buttonRemover.Text = "Remover";
             buttonRemover.UseVisualStyleBackColor = true;
             buttonRemover.Click += buttonRemover_Click;
             // 
             // dataGridView1
             // 
+            dataGridView1.AllowUserToOrderColumns = true;
             dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.BackgroundColor = SystemColors.ButtonHighlight;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(200, 237);
-            dataGridView1.Margin = new Padding(3, 4, 3, 4);
+            dataGridView1.Location = new Point(155, 178);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(723, 513);
+            dataGridView1.Size = new Size(653, 385);
             dataGridView1.TabIndex = 2;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -105,11 +102,10 @@
             buttonclientes.BackgroundImageLayout = ImageLayout.Center;
             buttonclientes.Image = (Image)resources.GetObject("buttonclientes.Image");
             buttonclientes.ImageAlign = ContentAlignment.TopLeft;
-            buttonclientes.Location = new Point(354, 109);
-            buttonclientes.Margin = new Padding(3, 4, 3, 4);
+            buttonclientes.Location = new Point(292, 82);
             buttonclientes.Name = "buttonclientes";
             buttonclientes.RightToLeft = RightToLeft.No;
-            buttonclientes.Size = new Size(109, 51);
+            buttonclientes.Size = new Size(113, 39);
             buttonclientes.TabIndex = 3;
             buttonclientes.Text = "    Clientes";
             buttonclientes.TextAlign = ContentAlignment.BottomRight;
@@ -120,10 +116,9 @@
             // 
             buttonfornecedores.Image = (Image)resources.GetObject("buttonfornecedores.Image");
             buttonfornecedores.ImageAlign = ContentAlignment.TopLeft;
-            buttonfornecedores.Location = new Point(670, 109);
-            buttonfornecedores.Margin = new Padding(3, 4, 3, 4);
+            buttonfornecedores.Location = new Point(564, 82);
             buttonfornecedores.Name = "buttonfornecedores";
-            buttonfornecedores.Size = new Size(107, 52);
+            buttonfornecedores.Size = new Size(116, 39);
             buttonfornecedores.TabIndex = 5;
             buttonfornecedores.Text = "Fornecedores";
             buttonfornecedores.TextAlign = ContentAlignment.BottomRight;
@@ -135,11 +130,10 @@
             buttonprodutos.BackgroundImageLayout = ImageLayout.None;
             buttonprodutos.Image = (Image)resources.GetObject("buttonprodutos.Image");
             buttonprodutos.ImageAlign = ContentAlignment.TopLeft;
-            buttonprodutos.Location = new Point(200, 108);
-            buttonprodutos.Margin = new Padding(3, 4, 3, 4);
+            buttonprodutos.Location = new Point(155, 81);
             buttonprodutos.Name = "buttonprodutos";
             buttonprodutos.RightToLeft = RightToLeft.No;
-            buttonprodutos.Size = new Size(105, 53);
+            buttonprodutos.Size = new Size(112, 40);
             buttonprodutos.TabIndex = 6;
             buttonprodutos.Text = "       Produtos";
             buttonprodutos.TextAlign = ContentAlignment.BottomRight;
@@ -150,10 +144,9 @@
             // 
             buttoncompras.Image = (Image)resources.GetObject("buttoncompras.Image");
             buttoncompras.ImageAlign = ContentAlignment.TopLeft;
-            buttoncompras.Location = new Point(814, 109);
-            buttoncompras.Margin = new Padding(3, 4, 3, 4);
+            buttoncompras.Location = new Point(696, 82);
             buttoncompras.Name = "buttoncompras";
-            buttoncompras.Size = new Size(110, 52);
+            buttoncompras.Size = new Size(112, 39);
             buttoncompras.TabIndex = 7;
             buttoncompras.Text = "Compras";
             buttoncompras.TextAlign = ContentAlignment.BottomRight;
@@ -163,103 +156,97 @@
             // button2
             // 
             button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
-            button2.Location = new Point(814, 167);
-            button2.Margin = new Padding(3, 4, 3, 4);
+            button2.Location = new Point(696, 127);
             button2.Name = "button2";
-            button2.Size = new Size(110, 27);
+            button2.Size = new Size(96, 20);
             button2.TabIndex = 0;
             button2.Text = "𝔸𝕕𝕚𝕔𝕚𝕠𝕟𝕒𝕣";
             button2.UseVisualStyleBackColor = true;
             button2.Click += buttonAdicionar_Click;
             // 
-            // button3
-            // 
-            button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
-            button3.Location = new Point(509, 167);
-            button3.Margin = new Padding(3, 4, 3, 4);
-            button3.Name = "button3";
-            button3.Size = new Size(110, 27);
-            button3.TabIndex = 0;
-            button3.Text = "𝔸𝕕𝕚𝕔𝕚𝕠𝕟𝕒𝕣";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += buttonAdicionar_Click;
-            // 
-            // button4
-            // 
-            button4.BackgroundImage = (Image)resources.GetObject("button4.BackgroundImage");
-            button4.Location = new Point(670, 167);
-            button4.Margin = new Padding(3, 4, 3, 4);
-            button4.Name = "button4";
-            button4.Size = new Size(107, 27);
-            button4.TabIndex = 0;
-            button4.Text = "𝔸𝕕𝕚𝕔𝕚𝕠𝕟𝕒𝕣";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += buttonAdicionar_Click;
-            // 
-            // button6
-            // 
-            button6.BackgroundImage = (Image)resources.GetObject("button6.BackgroundImage");
-            button6.Location = new Point(509, 202);
-            button6.Margin = new Padding(3, 4, 3, 4);
-            button6.Name = "button6";
-            button6.Size = new Size(110, 27);
-            button6.TabIndex = 1;
-            button6.Text = "ℝ𝕖𝕞𝕠𝕧𝕖𝕣";
-            button6.UseVisualStyleBackColor = true;
-            button6.Click += buttonRemover_Click;
-            // 
-            // button5
-            // 
-            button5.BackgroundImage = (Image)resources.GetObject("button5.BackgroundImage");
-            button5.Location = new Point(354, 202);
-            button5.Margin = new Padding(3, 4, 3, 4);
-            button5.Name = "button5";
-            button5.Size = new Size(109, 27);
-            button5.TabIndex = 1;
-            button5.Text = "ℝ𝕖𝕞𝕠𝕧𝕖𝕣";
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += buttonRemover_Click;
-            // 
             // button7
             // 
             button7.BackgroundImage = (Image)resources.GetObject("button7.BackgroundImage");
-            button7.Location = new Point(814, 202);
-            button7.Margin = new Padding(3, 4, 3, 4);
+            button7.Location = new Point(696, 153);
             button7.Name = "button7";
-            button7.Size = new Size(110, 27);
+            button7.Size = new Size(96, 20);
             button7.TabIndex = 1;
             button7.Text = "ℝ𝕖𝕞𝕠𝕧𝕖𝕣";
             button7.UseVisualStyleBackColor = true;
             button7.Click += buttonRemover_Click;
             // 
-            // button8
-            // 
-            button8.BackgroundImage = (Image)resources.GetObject("button8.BackgroundImage");
-            button8.Location = new Point(670, 202);
-            button8.Margin = new Padding(3, 4, 3, 4);
-            button8.Name = "button8";
-            button8.Size = new Size(107, 27);
-            button8.TabIndex = 1;
-            button8.Text = "ℝ𝕖𝕞𝕠𝕧𝕖𝕣";
-            button8.UseVisualStyleBackColor = true;
-            button8.Click += buttonRemover_Click;
-            // 
             // buttonAdicionarCliente
             // 
-            buttonAdicionarCliente.Location = new Point(354, 166);
+            buttonAdicionarCliente.Location = new Point(292, 122);
+            buttonAdicionarCliente.Margin = new Padding(3, 2, 3, 2);
             buttonAdicionarCliente.Name = "buttonAdicionarCliente";
-            buttonAdicionarCliente.Size = new Size(109, 29);
+            buttonAdicionarCliente.Size = new Size(95, 25);
             buttonAdicionarCliente.TabIndex = 8;
             buttonAdicionarCliente.Text = "Adicionar";
             buttonAdicionarCliente.UseVisualStyleBackColor = true;
             buttonAdicionarCliente.Click += buttonAdicionarCliente_Click;
             // 
+            // buttonAdicionarVendas
+            // 
+            buttonAdicionarVendas.Location = new Point(427, 122);
+            buttonAdicionarVendas.Name = "buttonAdicionarVendas";
+            buttonAdicionarVendas.Size = new Size(96, 25);
+            buttonAdicionarVendas.TabIndex = 9;
+            buttonAdicionarVendas.Text = "Adicionar";
+            buttonAdicionarVendas.UseVisualStyleBackColor = true;
+            buttonAdicionarVendas.Click += buttonAdicionarVendas_Click;
+            // 
+            // buttonAdicionarFornecedor
+            // 
+            buttonAdicionarFornecedor.Location = new Point(564, 123);
+            buttonAdicionarFornecedor.Name = "buttonAdicionarFornecedor";
+            buttonAdicionarFornecedor.Size = new Size(94, 24);
+            buttonAdicionarFornecedor.TabIndex = 10;
+            buttonAdicionarFornecedor.Text = "Adicionar";
+            buttonAdicionarFornecedor.UseVisualStyleBackColor = true;
+            buttonAdicionarFornecedor.Click += buttonAdicionarFornecedor_Click;
+            // 
+            // buttonRemoverFornecedor
+            // 
+            buttonRemoverFornecedor.Location = new Point(564, 149);
+            buttonRemoverFornecedor.Name = "buttonRemoverFornecedor";
+            buttonRemoverFornecedor.Size = new Size(94, 23);
+            buttonRemoverFornecedor.TabIndex = 11;
+            buttonRemoverFornecedor.Text = "Remover";
+            buttonRemoverFornecedor.UseVisualStyleBackColor = true;
+            buttonRemoverFornecedor.Click += buttonRemoverFornecedor_Click;
+            // 
+            // buttonRemoverVendas
+            // 
+            buttonRemoverVendas.Location = new Point(427, 149);
+            buttonRemoverVendas.Name = "buttonRemoverVendas";
+            buttonRemoverVendas.Size = new Size(96, 23);
+            buttonRemoverVendas.TabIndex = 12;
+            buttonRemoverVendas.Text = "Remover";
+            buttonRemoverVendas.UseVisualStyleBackColor = true;
+            buttonRemoverVendas.Click += buttonRemoverVendas_Click;
+            // 
+            // buttonRemoverCliente
+            // 
+            buttonRemoverCliente.Location = new Point(292, 149);
+            buttonRemoverCliente.Name = "buttonRemoverCliente";
+            buttonRemoverCliente.Size = new Size(95, 23);
+            buttonRemoverCliente.TabIndex = 13;
+            buttonRemoverCliente.Text = "Remover";
+            buttonRemoverCliente.UseVisualStyleBackColor = true;
+            buttonRemoverCliente.Click += buttonRemoverCliente_Click;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1160, 911);
+            ClientSize = new Size(1015, 661);
+            Controls.Add(buttonRemoverCliente);
+            Controls.Add(buttonRemoverVendas);
+            Controls.Add(buttonRemoverFornecedor);
+            Controls.Add(buttonAdicionarFornecedor);
+            Controls.Add(buttonAdicionarVendas);
             Controls.Add(buttonAdicionarCliente);
             Controls.Add(buttoncompras);
             Controls.Add(buttonprodutos);
@@ -267,16 +254,10 @@
             Controls.Add(buttonvendas);
             Controls.Add(buttonclientes);
             Controls.Add(dataGridView1);
-            Controls.Add(button8);
             Controls.Add(button7);
-            Controls.Add(button5);
-            Controls.Add(button6);
             Controls.Add(buttonRemover);
-            Controls.Add(button4);
-            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(buttonAdicionar);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -295,12 +276,12 @@
         private Button buttonprodutos;
         private Button buttoncompras;
         private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button6;
-        private Button button5;
         private Button button7;
-        private Button button8;
         private Button buttonAdicionarCliente;
+        private Button buttonAdicionarVendas;
+        private Button buttonAdicionarFornecedor;
+        private Button buttonRemoverFornecedor;
+        private Button buttonRemoverVendas;
+        private Button buttonRemoverCliente;
     }
 }
