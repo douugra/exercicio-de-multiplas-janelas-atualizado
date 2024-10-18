@@ -37,7 +37,6 @@
             buttonfornecedores = new Button();
             buttonprodutos = new Button();
             buttoncompras = new Button();
-            button2 = new Button();
             button7 = new Button();
             buttonAdicionarCliente = new Button();
             buttonAdicionarVendas = new Button();
@@ -45,6 +44,7 @@
             buttonRemoverFornecedor = new Button();
             buttonRemoverVendas = new Button();
             buttonRemoverCliente = new Button();
+            buttonAdicionarCompra = new Button();
             buttonvendas = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -153,17 +153,6 @@
             buttoncompras.UseVisualStyleBackColor = true;
             buttoncompras.Click += buttoncompras_Click;
             // 
-            // button2
-            // 
-            button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
-            button2.Location = new Point(696, 127);
-            button2.Name = "button2";
-            button2.Size = new Size(96, 20);
-            button2.TabIndex = 0;
-            button2.Text = "𝔸𝕕𝕚𝕔𝕚𝕠𝕟𝕒𝕣";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += buttonAdicionar_Click;
-            // 
             // button7
             // 
             button7.BackgroundImage = (Image)resources.GetObject("button7.BackgroundImage");
@@ -236,12 +225,23 @@
             buttonRemoverCliente.UseVisualStyleBackColor = true;
             buttonRemoverCliente.Click += buttonRemoverCliente_Click;
             // 
+            // buttonAdicionarCompra
+            // 
+            buttonAdicionarCompra.Location = new Point(696, 123);
+            buttonAdicionarCompra.Name = "buttonAdicionarCompra";
+            buttonAdicionarCompra.Size = new Size(85, 24);
+            buttonAdicionarCompra.TabIndex = 14;
+            buttonAdicionarCompra.Text = "Adicionar";
+            buttonAdicionarCompra.UseVisualStyleBackColor = true;
+            buttonAdicionarCompra.Click += buttonAdicionarCompra_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1015, 661);
+            Controls.Add(buttonAdicionarCompra);
             Controls.Add(buttonRemoverCliente);
             Controls.Add(buttonRemoverVendas);
             Controls.Add(buttonRemoverFornecedor);
@@ -256,7 +256,6 @@
             Controls.Add(dataGridView1);
             Controls.Add(button7);
             Controls.Add(buttonRemover);
-            Controls.Add(button2);
             Controls.Add(buttonAdicionar);
             Name = "Form1";
             Text = "Form1";
@@ -275,7 +274,6 @@
         private Button buttonfornecedores;
         private Button buttonprodutos;
         private Button buttoncompras;
-        private Button button2;
         private Button button7;
         private Button buttonAdicionarCliente;
         private Button buttonAdicionarVendas;
@@ -283,5 +281,6 @@
         private Button buttonRemoverFornecedor;
         private Button buttonRemoverVendas;
         private Button buttonRemoverCliente;
+        private Button buttonAdicionarCompra;
     }
 }

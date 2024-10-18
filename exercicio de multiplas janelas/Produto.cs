@@ -22,6 +22,7 @@ namespace exercicio_de_multiplas_janelas
 
         [DisplayName("Preço de Venda")]
         public decimal PrecoVenda { get; set; }
+        public decimal PrecoUnitario { get; internal set; }
 
         public Produto()
         {

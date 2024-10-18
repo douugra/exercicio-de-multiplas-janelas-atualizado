@@ -198,6 +198,40 @@ namespace exercicio_de_multiplas_janelas
                 produtos.RemoveAt(dataGridView1.SelectedRows[0].Index);
             }
         }
+
+        private void buttonAdicionarCompra_Click(object sender, EventArgs e)
+        {
+            if (fornecedores.Count == 0)
+            {
+                MessageBox.Show("Você Precisa Cadastrar Fornecedores antes de efetuar uma compra.");
+                return;
+            }
+
+            if (produtos.Count == 0)
+            {
+                MessageBox.Show("Voce Precisa Cadastrar Produtos antes de efetuar uma compra.");
+                return;
+            }
+
+            FormCriarCompra fcc = new FormCriarCompra(fornecedores, produtos);
+            var resultado = fcc.ShowDialog();
+            if(resultado == DialogResult.OK)
+            {
+                Compra compra = new Compra();
+                if (Compras.Count == 0) compra.idProduto = 1;
+                else compra.idProduto = Compras.Max(x => x.idProduto) + 1;
+
+                compra.idProduto = fcc.IdProduto;
+                compra.idFornecedor = fcc.IdFornecedor;
+                compra.quantidade = (int)fcc.Quantidade;
+                compra.desconto = fcc.Desconto;
+                compra.dataCompra = DateTime.Now;
+
+                Compras.Add(compra);
+
+
+            }
+        }
     }
 }
 
